@@ -124,7 +124,7 @@ app/src/main/java/com/example/projectuas_perpus/
 ### Langkah
 1. Clone repositori:
 ```bash
-git clone https://github.com/KuzuChis/quantumreads-android.git
+git clone https://github.com/KuzuChis/Quantum_Reads.git
 ```
 
 2. Buka **Android Studio** → **File → Open** → pilih folder project
