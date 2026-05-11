@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoawal_member"
+        android:layout_width="135dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_buku" />
+
+    <TextView
+        android:id="@+id/textView_judulmember"
+        android:layout_width="222dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Selamat Datang, ini nanti nama orangnya ton"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toEndOf="@+id/logoawal_member"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_deskripsi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/customedittext"
+        android:padding="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_pinjam"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/imageView_edit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/customedittext"
+        android:padding="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_deskripsi"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/imageView_pinjam"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/customedittext"
+        android:padding="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoawal_member"
+        app:srcCompat="@drawable/buku" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pinjam"
+        android:layout_width="251dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_pinjam_btn"
+        android:elevation="3dp"
+        android:ems="10"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:padding="13dp"
+        android:text="[PEMINJAMAN]\ndan\n[PENGEMBALIAN]"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_pinjam"
+        app:layout_constraintTop_toBottomOf="@+id/textView_judulmember" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_deskirpsi"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_pinjam_btn"
+        android:elevation="3dp"
+        android:ems="10"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:padding="13dp"
+        android:text="Lihat Daftar Buku"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/imageView_deskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pinjam" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_info"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_pinjam_btn"
+        android:elevation="3dp"
+        android:ems="10"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:padding="13dp"
+        android:text="[EDIT PROFILE]"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_edit"
+        app:layout_constraintTop_toBottomOf="@+id/btn_deskirpsi" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LogoutMember"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_cancel_btn"
+        android:elevation="3dp"
+        android:text="logout"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

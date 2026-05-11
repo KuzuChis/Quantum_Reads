@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/foto_bukubooking"
+        android:layout_width="169dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/background_login"
+        android:layout_width="413dp"
+        android:layout_height="413dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_bukubooking"
+        app:srcCompat="@drawable/kotakitem" />
+
+    <TextView
+        android:id="@+id/judul_bukubooking"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="judul buku             :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/judul_bukubooking2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background_login" />
+
+    <TextView
+        android:id="@+id/judul_bukubooking2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:paddingStart="5dp"
+        android:background="@drawable/customedittext"
+        android:text="judul buku"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background_login" />
+
+    <TextView
+        android:id="@+id/username_booking"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="username             :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/username_booking2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul_bukubooking" />
+
+    <TextView
+        android:id="@+id/username_booking2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/customedittext"
+        android:paddingStart="5dp"
+        android:text="username"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul_bukubooking2" />
+
+    <TextView
+        android:id="@+id/tglbooking"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="tanggal pinjam     :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/tglbooking2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_booking" />
+
+    <TextView
+        android:id="@+id/tglbooking2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:paddingStart="5dp"
+        android:background="@drawable/customedittext"
+        android:text="tanggal pinjam"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_booking2" />
+
+    <TextView
+        android:id="@+id/tglkembali"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="tanggal Kembali :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tglbooking" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tglbooking2" />
+
+    <Button
+        android:id="@+id/btntglkembali"
+        android:layout_width="174dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Pilih Tanggal"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/tglkembali"
+        app:layout_constraintTop_toBottomOf="@+id/tglkembali" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnkembaliBooking"
+        android:layout_width="159dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_cancel_btn"
+        android:hint="Kembali"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btnpinjam"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntglkembali" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnpinjam"
+        android:layout_width="159dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/custom_btn"
+        android:hint="Pinjam"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntglkembali" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

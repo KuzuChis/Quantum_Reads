@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectUas_Perpus"
+        tools:targetApi="31">
+        <activity
+            android:name=".displayBookingAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".infoBukuBookingMember"
+            android:exported="false" />
+        <activity
+            android:name=".displayBookingMember"
+            android:exported="false" />
+        <activity
+            android:name=".bookings"
+            android:exported="false" />
+        <activity
+            android:name=".infoBukuMember"
+            android:exported="false" />
+        <activity
+            android:name=".displayBukuMember"
+            android:exported="false" />
+        <activity
+            android:name=".MyAdapterMemberAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".displayMemberAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".MyAdapterBookAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".InsertBuku"
+            android:exported="false" />
+        <activity
+            android:name=".displayBukuAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".loginAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".editProfil"
+            android:exported="false" />
+        <activity
+            android:name=".memberPage"
+            android:exported="false" />
+        <activity
+            android:name=".adminPage"
+            android:exported="false" />
+        <activity
+            android:name=".forgetPass"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

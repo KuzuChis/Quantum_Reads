@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/background_signup2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-255dp"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@drawable/kotakitem" />
+
+        <ImageButton
+            android:id="@+id/flowmenuBukuAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="TODO"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/more"
+            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/fotobuku"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="foto"
+            android:paddingTop="20dp"
+            android:src="@drawable/upload"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/judulBukuAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fotobuku"
+            android:layout_toLeftOf="@id/flowmenuBukuAdmin"
+            android:layout_marginTop="20dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/customedittext"
+            android:text="Judul Buku"
+            android:textColor="@color/white"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/penulisBukuAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fotobuku"
+            android:layout_toLeftOf="@id/flowmenuBukuAdmin"
+            android:layout_below="@id/judulBukuAdmin"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/customedittext"
+            android:text="Penulis"
+            android:textColor="@color/white"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/jenisBukuAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fotobuku"
+            android:layout_toLeftOf="@id/flowmenuBukuAdmin"
+            android:layout_below="@id/penulisBukuAdmin"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/customedittext"
+            android:text="Jenis Buku"
+            android:textColor="@color/white"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/genreBukuAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fotobuku"
+            android:layout_toLeftOf="@id/flowmenuBukuAdmin"
+            android:layout_below="@id/jenisBukuAdmin"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/customedittext"
+            android:text="Genre Buku"
+            android:textColor="@color/white"
+            android:gravity="left|center"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

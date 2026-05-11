@@ -1,0 +1,36 @@
+# ── Built outputs ───────────────────────────────────────
+/build/
+app/build/
+**/build/
+
+# ── Gradle ──────────────────────────────────────────────
+.gradle/
+gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# ── Local config (berisi path SDK lokal, JANGAN di-push) 
+local.properties
+
+# ── Android Studio / IntelliJ ───────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+captures/
+
+# ── Keystore & Signing ───────────────────────────────────
+*.jks
+*.keystore
+keystore.properties
+
+# ── OS ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── NDK / CMake ─────────────────────────────────────────
+.externalNativeBuild/
+.cxx/
+
+# ── Profiling ───────────────────────────────────────────
+*.hprof

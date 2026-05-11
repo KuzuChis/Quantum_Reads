@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/foto_bukuinfo"
+        android:layout_width="169dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/background_login"
+        android:layout_width="413dp"
+        android:layout_height="413dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_bukuinfo"
+        app:srcCompat="@drawable/kotakitem" />
+
+    <TextView
+        android:id="@+id/judul_bukuinfo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="judul buku             :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/judul_bukuinfo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background_login" />
+
+    <TextView
+        android:id="@+id/judul_bukuinfo2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:paddingStart="5dp"
+        android:background="@drawable/customedittext"
+        android:text="judul buku"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background_login" />
+
+    <TextView
+        android:id="@+id/penerbit_bukuinfo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="Penerbit buku      :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/penerbit_bukuinfo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul_bukuinfo" />
+
+    <TextView
+        android:id="@+id/penerbit_bukuinfo2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:paddingStart="5dp"
+        android:background="@drawable/customedittext"
+        android:text="penerbit buku"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul_bukuinfo2" />
+
+    <TextView
+        android:id="@+id/jenis_bukuinfo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="Jenis buku            :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/jenis_bukuinfo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/penerbit_bukuinfo" />
+
+    <TextView
+        android:id="@+id/jenis_bukuinfo2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:paddingStart="5dp"
+        android:background="@drawable/customedittext"
+        android:text="jenis buku"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/penerbit_bukuinfo2" />
+
+    <TextView
+        android:id="@+id/genre_bukuinfo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/customedittext"
+        android:gravity="center"
+        android:text="genre buku           :"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/genre_bukuinfo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jenis_bukuinfo" />
+
+    <TextView
+        android:id="@+id/genre_bukuinfo2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/customedittext"
+        android:paddingStart="5dp"
+        android:text="genre buku"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jenis_bukuinfo2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnkembali"
+        android:layout_width="159dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/custom_cancel_btn"
+        android:hint="Kembali"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_bukuinfo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

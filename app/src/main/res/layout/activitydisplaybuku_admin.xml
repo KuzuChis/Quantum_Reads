@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple"
+    tools:context=".activity_display">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|center"
+            android:background="@drawable/add"
+            android:backgroundTint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txt_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left|center"
+            android:layout_margin="5dp"
+            android:background="@drawable/customedittext"
+            android:text="   Insert Buku"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBookAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="682dp"
+        android:layout_below="@+id/btn_add"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="0dp" />
+</LinearLayout>

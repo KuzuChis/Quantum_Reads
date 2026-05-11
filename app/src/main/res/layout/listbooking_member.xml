@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/background_signup2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="182dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginTop="-4dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:background="@color/black" />-->
+
+    <ImageView
+        android:id="@+id/fotobukuBook"
+        android:layout_width="106dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="foto"
+        app:srcCompat="@drawable/upload"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/judulbookMember"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/fotobukuBook"
+        android:background="@drawable/customedittext"
+        android:gravity="left|center"
+        android:padding="5dp"
+        android:paddingStart="5dp"
+        android:text="Ini judul buku nya"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tglpinjamBook"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulbookMember"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/fotobukuBook"
+        android:background="@drawable/customedittext"
+        android:gravity="left|center"
+        android:padding="5dp"
+        android:paddingStart="5dp"
+        android:text="Ini tgl pinjam nya"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tglkembaliBook"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tglpinjamBook"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/fotobukuBook"
+        android:background="@drawable/customedittext"
+        android:gravity="left|center"
+        android:padding="5dp"
+        android:paddingStart="5dp"
+        android:text="Ini tgl kembali nya"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/flowmenuBookingMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:contentDescription="TODO"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/more"
+        tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

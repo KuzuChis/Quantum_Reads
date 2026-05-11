@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Lihat Informasi Buku"
+        android:id="@+id/info_menu"/>
+    <item
+        android:title="Kembalikan Buku"
+        android:id="@+id/kembali_menu"/>
+</menu>

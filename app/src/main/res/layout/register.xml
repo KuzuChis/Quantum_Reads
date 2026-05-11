@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/background_signup2"-->
+<!--        android:layout_width="440dp"-->
+<!--        android:layout_height="448dp"-->
+<!--        app:srcCompat="@drawable/kotakitem"-->
+<!--        tools:layout_editor_absoluteX="-1dp"-->
+<!--        tools:layout_editor_absoluteY="328dp" />-->
+
+    <ImageView
+        android:id="@+id/background_signup"
+        android:layout_width="1000dp"
+        android:layout_height="650dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_buku"
+        app:srcCompat="@drawable/kotakitem" />
+
+    <ImageView
+        android:id="@+id/signup_buku"
+        android:layout_width="88dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/judul_signup"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_buku" />
+
+    <TextView
+        android:id="@+id/judul_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="QUANTUM READS"
+        android:textColor="@color/white"
+        android:textSize="33dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/background_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_namalengkap_signup"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/username"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:hint="Nama Lengkap"
+        android:textColor="@color/white"
+        android:textColorHint="#aeaeae"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/judulform_signup"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/judulform_signup"
+        app:layout_constraintTop_toBottomOf="@id/judulform_signup" />
+
+    <EditText
+        android:id="@+id/username_signup"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/username"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:hint="Username"
+        android:textColor="@color/white"
+        android:textColorHint="#aeaeae"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edit_namalengkap_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_namalengkap_signup"
+        app:layout_constraintTop_toBottomOf="@+id/edit_namalengkap_signup" />
+
+    <EditText
+        android:id="@+id/editemail_signup"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/gmail"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:hint="Gmail"
+        android:textColor="@color/white"
+        android:textColorHint="#aeaeae"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/username_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username_signup"
+        app:layout_constraintTop_toBottomOf="@+id/username_signup" />
+
+    <EditText
+        android:id="@+id/edittelepon_signup"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:paddingStart="10dp"
+        android:hint="Telepon"
+        android:textColor="@color/white"
+        android:textColorHint="#aeaeae"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editemail_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editemail_signup"
+        app:layout_constraintTop_toBottomOf="@+id/editemail_signup" />
+
+    <EditText
+        android:id="@+id/editalamat_signup"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/alamat"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:paddingStart="10dp"
+        android:hint="Alamat"
+        android:textColor="@color/white"
+        android:textColorHint="#aeaeae"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edittelepon_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edittelepon_signup"
+        app:layout_constraintTop_toBottomOf="@+id/edittelepon_signup" />
+
+
+
+    <EditText
+        android:id="@+id/editpassword_signup"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#aeaeae"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editalamat_signup"
+        app:layout_constraintStart_toStartOf="@+id/editalamat_signup"
+        app:layout_constraintTop_toBottomOf="@+id/editalamat_signup" />
+
+    <EditText
+        android:id="@+id/editconfirmpassword_signup"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#aeaeae"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editpassword_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editpassword_signup"
+        app:layout_constraintTop_toBottomOf="@+id/editpassword_signup" />
+
+    <TextView
+        android:id="@+id/judulform_signup"
+        android:layout_width="193dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customedittext"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:paddingStart="10dp"
+        android:text="SIGN UP FOR FREE"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background_signup" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:background="@drawable/custom_btn"
+        android:elevation="3dp"
+        android:text="submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintTop_toBottomOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancel"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:background="@drawable/custom_cancel_btn"
+        android:elevation="3dp"
+        android:text="cancel"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintTop_toBottomOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resetBtn"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:background="@drawable/custom_reset_btn"
+        android:elevation="3dp"
+        android:text="reset"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/editconfirmpassword_signup"
+        app:layout_constraintTop_toBottomOf="@+id/submitBtn"
+        app:layout_constraintVertical_bias="0.228" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

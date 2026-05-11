@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/background_signup2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-169dp"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@drawable/kotakitem" />
+
+
+        <TextView
+            android:id="@+id/UsernameMember"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/customedittext"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:text="Ini Username nya"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/judulbooking"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/UsernameMember"
+            android:background="@drawable/customedittext"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:text="Ini Judul Buku nya"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tglPinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/judulbooking"
+            android:background="@drawable/customedittext"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:text="Ini tgl pinjam nya"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tglKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/tglPinjam"
+            android:background="@drawable/customedittext"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:text="Ini tgl kembali nya"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/tglKembali"
+            android:background="@drawable/customedittext"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:text="Ini status nya"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
